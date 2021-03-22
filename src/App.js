@@ -101,22 +101,21 @@ const theme = {
                     headerBackground='true'
                 >
 
-               
-
+          
              <Box 
                  margin={{ left: 'small', right: 'none', vertical: 'none' }}
                  direction='row-responsive'
                  background='light-2' 
                  elevation='medium'
                  border='all'
-              >  
+              >
                   <Box                    
                      pad={{ left: 'small', right: 'small', vertical: 'small' }} 
                      align = 'stretch' 
                      background='light-1' 
                      justify='center'
                   >
-                    <a href='#about'><UserExpert size='medium' /></a>
+                    <a href='#about'><div> <UserExpert size='medium' /></div></a>
                   </Box>
                   <Box                           
                      pad='small' 
