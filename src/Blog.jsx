@@ -4,7 +4,7 @@ import {  DocumentText, Medium, CodeSandbox } from 'grommet-icons';
 
 const Blog = () => {    
     return (  
-      <div id='blog'>
+      <div id='blog' style={{paddingTop:'20px'}}>
         <Box
            margin={{ left: 'none', right: 'none', vertical: 'large' }}>
            <Box

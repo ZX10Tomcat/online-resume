@@ -4,7 +4,7 @@ import { Flag  } from 'grommet-icons';
 
 const Experience = () => {    
     return (
-      <div id='experience' >
+      <div id='experience' style={{paddingTop:'20px'}}>
        <Box
          margin={{ left: 'none', right: 'none', vertical: 'large' }}>
          <Box

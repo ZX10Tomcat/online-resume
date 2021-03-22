@@ -4,7 +4,7 @@ import { Waypoint, Code, Database, Desktop, Js, Language } from 'grommet-icons';
 
 const Qualifications = () => {    
     return (
-      <div id='qualifications' >
+      <div id='qualifications' style={{paddingTop:'20px'}}>
         <Box
            margin={{ left: 'none', right: 'none', vertical: 'large' }}>
            <Box

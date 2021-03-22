@@ -1,6 +1,6 @@
-import React, { Component , useState} from 'react';
-import { Box, Button, Grid, Grommet } from 'grommet';
-import { Certificate, Flag, Waypoint, UserExpert, Grow, DocumentText, MailOption  } from 'grommet-icons';
+import React, {useState} from 'react';
+import { Box, Menu, Grid, Grommet, Layer,ResponsiveContext } from 'grommet';
+import { Certificate, Flag, Waypoint, UserExpert, Grow, DocumentText, MailOption, CaretNext  } from 'grommet-icons';
 import ScrollspyNav from 'react-scrollspy-nav';
 import About from './About';
 import Experience from './Experience';
@@ -20,22 +20,25 @@ const theme = {
     },
   };
 
-  const App = () => {    
+  const App = () => {  
+      const [showSidebar, setShowSidebar] = useState(true);  
         return (
-            <Grommet theme={theme}>                
+         <Grommet theme={theme}>  
+         <ResponsiveContext.Consumer>
+         {size => (
                <Grid 
                   rows={['xxsmall', 'fill']}
                   columns={['small', 'auto']}
                   gap='small'
                   areas={[
                      { name: 'header', start: [0, 0], end: [1, 0], fill: true },
-                     { name: 'nav', start: [0, 1], end: [0, 1],  fill: true },
+                     { name: 'nav', start: [0, 1], end: [0, 1],  fill: true } ,
                      { name: 'main', start: [1, 1], end: [1, 1], fill: true },
                   ]}
                >
                 <Box  
                    full direction='row'
-                   align='center'
+                   align='start'
                    justify='between'
                    background='brand'
                    pad={{ left: 'medium', right: 'small', vertical: 'small' }}
@@ -44,28 +47,64 @@ const theme = {
                    style={{ zIndex: '1', position: 'fixed', width:'100%', top: '0px', left: '0px'}}
                    gridArea='header'
                 >
-                      Bogdan Samoletskyi resume 
-                </Box>                
-                <Box flex 
-                   width='small'
-                   background='light-5'
+                   Bogdan Samoletskyi resume 
+                </Box>  
+
+                {(size === 'medium' || size === 'small') ? (
+                
+                  <Box flex 
+                   width='xxsmall'
+                   background='light-2'
                    elevation='large'
                    align='stretch'  
-                   pad={{ left: 'small', right: 'small', vertical: 'large' }}                 
+                   pad={{ left: 'none', right: 'small', vertical: 'large' }}                 
                    gridArea='nav' 
                    overflow='hidden' 
                    style={{position: 'fixed', height: '100%'}}
-                >                    
+                >
+               
+                  <Menu
+                     icon={<CaretNext size='medium'/>}
+                     items={[
+                        {label: 'About', href: '#about'},
+                        {label: 'Experience', href: '#experience'},
+                        {label: 'Qualifications', href: '#qualifications'},
+                        {label: 'Education & Certificates', href: '#certificates'},
+                        {label: 'Personal projects', href: '#projects'},
+                        {label: 'Contacts', href: '#contacts'},
+                        {label: 'Blog', href: '#blog'},
+                     ]}
+                     
+                   /> 
+                 
+                 
+                   </Box>
+
+                   
+                ) : (          
+                <Box flex 
+                   width='small'
+                   background='light-2'
+                   elevation='large'
+                   align='stretch'  
+                   pad={{ left: 'none', right: 'small', vertical: 'large' }}                 
+                   gridArea='nav' 
+                   overflow='hidden' 
+                   style={{position: 'fixed', height: '100%'}}
+                >
+
                 <ScrollspyNav
-                    scrollTargetIds={['experience', 'qualifications', 'certificates', 'projects','contacts', 'blog']}
-                    offset={350}
+                    scrollTargetIds={['about', 'experience', 'qualifications', 'certificates', 'projects','contacts', 'blog']}
+                    offset={400}
                     activeNavClass='is-active'
                     scrollDuration='1000'
                     headerBackground='true'
                 >
 
+               
+
              <Box 
-                 margin={{ left: 'none', right: 'none', vertical: 'none' }}
+                 margin={{ left: 'small', right: 'none', vertical: 'none' }}
                  direction='row-responsive'
                  background='light-2' 
                  elevation='medium'
@@ -77,7 +116,7 @@ const theme = {
                      background='light-1' 
                      justify='center'
                   >
-                    <a href='#experience'><UserExpert size='medium' /></a>
+                    <a href='#about'><UserExpert size='medium' /></a>
                   </Box>
                   <Box                           
                      pad='small' 
@@ -87,12 +126,12 @@ const theme = {
                      justify='start'  
                      background='light-1'   
                   >        
-                     <a href='/'>About </a>
+                     <a href='#about'>About </a>
                   </Box>
                </Box>
 
                <Box 
-                 margin={{ left: 'none', right: 'none', vertical: 'none' }}
+                 margin={{ left: 'small', right: 'none', vertical: 'none' }}
                  direction='row-responsive'
                  background='light-2' 
                  elevation='medium'
@@ -119,7 +158,7 @@ const theme = {
                </Box>
 
                <Box 
-                 margin={{ left: 'none', right: 'none', vertical: 'none' }}
+                 margin={{ left: 'small', right: 'none', vertical: 'none' }}
                  direction='row-responsive'
                  background='light-2' 
                  elevation='medium'
@@ -147,7 +186,7 @@ const theme = {
                </Box>
 
                <Box 
-                 margin={{ left: 'none', right: 'none', vertical: 'none' }}
+                 margin={{ left: 'small', right: 'none', vertical: 'none' }}
                  direction='row-responsive'
                  background='light-2' 
                  elevation='medium'
@@ -175,7 +214,7 @@ const theme = {
                </Box>
 
                <Box 
-                 margin={{ left: 'none', right: 'none', vertical: 'none' }}
+                 margin={{ left: 'small', right: 'none', vertical: 'none' }}
                  direction='row-responsive'
                  background='light-2' 
                  elevation='medium'
@@ -203,7 +242,7 @@ const theme = {
                </Box>
 
                <Box 
-                 margin={{ left: 'none', right: 'none', vertical: 'none' }}
+                 margin={{ left: 'small', right: 'none', vertical: 'none' }}
                  direction='row-responsive'
                  background='light-2' 
                  elevation='medium'
@@ -231,7 +270,7 @@ const theme = {
                </Box>
 
                <Box 
-                 margin={{ left: 'none', right: 'none', vertical: 'none' }}
+                 margin={{ left: 'small', right: 'none', vertical: 'none' }}
                  direction='row-responsive'
                  background='light-2' 
                  elevation='medium'
@@ -261,15 +300,17 @@ const theme = {
                 </ScrollspyNav>
 
                 </Box>
+                )}
+               
                 <Box 
                    flex 
-                   pad={{ left: 'medium', right: 'small', vertical: 'large' }} 
-                   align = 'stretch' 
+                   pad={{ left: 'small', right: 'small', vertical: 'large' }} 
+                   align = 'end' 
                    gridArea='main' 
                    background='light-1' 
                 >
                 <div>
-                  <div><big>Full stack developer aspired in Data Science</big></div>
+                  
                    {/* --- About Section --- */}
                   <About />
 
@@ -294,7 +335,10 @@ const theme = {
                 </div>
                 </Box>
                 
+                
                 </Grid>
+                )}
+               </ResponsiveContext.Consumer>
                 </Grommet>
     
         )}

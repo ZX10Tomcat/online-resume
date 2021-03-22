@@ -5,6 +5,7 @@ import photo from './resume_photo.jpg';
 
 const About = () => {    
     return (
+      <div id='about' style={{paddingTop:'50px'}}><big>Full stack developer aspired in Data Science</big>
         <Box
             margin={{ left: 'none', right: 'none', vertical: 'large' }}>
               <Box
@@ -20,7 +21,7 @@ const About = () => {
                 <Heading level='3'> <UserExpert color='#444444' size='medium' /> About </Heading>
               </Box>
               <Box 
-                 direction='row-responsive'
+                 direction='row'
                  background='light-3'                                              
                  elevation='large'>
               <Box
@@ -30,7 +31,7 @@ const About = () => {
                  align = 'start' 
                  width='xlarge' 
                  justify='start'         
-              >
+              >                 
                  <big>Always open for new opportunities and challenges to make the world better.</big>
                  <p>
                     During my career, I went a long way from a junior PHP developer to a senior full-stack developer in a big company. <br />
@@ -50,6 +51,7 @@ const About = () => {
               </Box>
               </Box>                   
               </Box>  
+         </div>
     )}
 
     export default About;
