@@ -38,10 +38,12 @@ const About = () => {
                     Worked in various companies and with various technologies, primarily with .Net C# stack, ASP .Net and .Net Core.<br />
                     I am always aspired to learn ew technologies and tools, to make work for business better and faster.<br />
                     Willing know what is the best fit to the project needs and to have strong background knowledge.<br />
-                    Trying to do my best to use my knowledge in problem-solving tasks.
+                    Trying to do my best to use my knowledge in problem-solving tasks.<br/>
+                    I have good spoken English and fluent Ukrainan and Russian.
                     <br /><br />
                     Interested in the Data science projects and in cloud technologies and have a blog on Medium, where I’m writing about Data science. <br />
-                    Passed AWS Certified Developer Associate exam and will be excited to use my knowledge as a developer and help the company to grow.
+                    Passed AWS Certified Developer Associate exam and will be excited to use my knowledge as a developer and help the company to grow. 
+
               </p>                    
               </Box>
               <Box 
