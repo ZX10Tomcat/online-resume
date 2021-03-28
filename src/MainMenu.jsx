@@ -5,21 +5,21 @@ import ScrollspyNav from 'react-scrollspy-nav';
 
 const MainMenu = () => {    
     return (
-
+      <div style={{paddingTop:'10px'}}>
         <Box 
            flex 
            width='small'
-           background='light-2'
+           background='light-1'
            elevation='large'
            align='stretch'  
            pad={{ left: 'none', right: 'small', vertical: 'large' }}                 
            gridArea='nav' 
            overflow='hidden' 
-           style={{position: 'fixed', height: '100%'}}
+           style={{position: 'fixed', height: '100%', lineHeight: '20px'}}
         >
             <ScrollspyNav
                 scrollTargetIds={['about', 'experience', 'qualifications', 'certificates', 'projects','contacts', 'blog']}
-                offset={400}
+                offset={409}
                 activeNavClass='is-active'
                 scrollDuration='1000'
                 headerBackground='true'
@@ -49,7 +49,7 @@ const MainMenu = () => {
                     justify='start'  
                     background='light-1'   
                   >        
-                     <a href='#about'>About </a>
+                     <a href='#about'><span class='menuitem'>About</span></a>
                   </Box>
                 </Box>
 
@@ -76,7 +76,7 @@ const MainMenu = () => {
                     justify='start'  
                     background='light-1'   
                   >        
-                     <a href='#experience'>Experience </a>
+                     <a href='#experience'><span class='menuitem'>Experience </span></a>
                   </Box>
                 </Box>
 
@@ -103,7 +103,7 @@ const MainMenu = () => {
                      justify='start'  
                      background='light-1'   
                   >        
-                     <a href='#qualifications'> Qualifications</a>
+                     <a href='#qualifications'> <span class='menuitem'>Qualifications</span></a>
                   </Box>
                </Box>
 
@@ -131,7 +131,7 @@ const MainMenu = () => {
                      justify='start'  
                      background='light-1'   
                   >        
-                     <a href='#certificates'><span>Education & Certificates </span></a>
+                     <a href='#certificates'><span class='menuitem'>Education & Certificates </span></a>
                   </Box>
                </Box>
 
@@ -159,7 +159,7 @@ const MainMenu = () => {
                      justify='start'  
                      background='light-1'   
                   >        
-                     <a href='#projects'><span>Personal projects </span></a>
+                     <a href='#projects'><span class='menuitem'>Personal projects </span></a>
                   </Box>
                </Box>
 
@@ -187,7 +187,7 @@ const MainMenu = () => {
                      justify='start'  
                      background='light-1'   
                   >        
-                     <a href='#contacts'><span>Contacts </span></a>
+                     <a href='#contacts'><span class='menuitem'>Contacts </span></a>
                   </Box>
                </Box>
 
@@ -215,13 +215,14 @@ const MainMenu = () => {
                      justify='start'  
                      background='light-1'   
                   >        
-                     <a href='#blog'><span>Blog </span></a>
+                     <a href='#blog'><span class='menuitem'>Blog </span></a>
                   </Box>
                </Box>
                            
                 </ScrollspyNav>
 
             </Box> 
+         </div>
         )}
 
 export default MainMenu;

@@ -4,7 +4,7 @@ import { Certificate, Workshop, Amazon, Windows } from 'grommet-icons';
 
 const Certificates = () => {    
     return (  
-      <div id='certificates' style={{paddingTop:'20px'}}>     
+      <div id='certificates' style={{paddingTop:'30px'}}>     
         <Box           
            margin={{ left: 'none', right: 'none', vertical: 'large' }}>              
            <Box

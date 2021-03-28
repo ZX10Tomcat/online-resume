@@ -6,18 +6,17 @@ const MinMenu = () => {
     return (
 
         <Box 
-           flex 
            width='xxsmall'
-           background='light-2'
-           elevation='large'
-           align='stretch'  
-           pad={{ left: 'none', right: 'small', vertical: 'large' }}                 
-           gridArea='nav' 
-           overflow='hidden' 
-           style={{position: 'fixed', height: '100%'}}
+           background='brand'
+           align='end'  
+           pad={{ left: 'large', right: 'small', vertical: 'none' }}                 
+           gridArea='header' 
+           elevation='none'
         >
             <Menu
-               icon={<CaretNext size='medium'/>}
+               size='small'
+               label='Menu'
+               dropBackground='light-1'
                items={[
                         {label: 'About', href: '#about'},
                         {label: 'Experience', href: '#experience'},

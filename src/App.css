@@ -1,11 +1,34 @@
 .is-active {
    background-color:#e3eaeea1;
-    width: 25px; 
+    width: 24px; 
     box-shadow: 0 4px 0 #669bbc;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
 }
 
+.menuitem {
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+
+.headertext {
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
 a:hover {
-    cursor: pointer;
-  }
+  color: blue;
+  cursor: pointer;
+}
+
+a:active {
+  color: blue;
+}

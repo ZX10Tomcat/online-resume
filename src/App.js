@@ -14,8 +14,8 @@ const theme = {
     global: {
       font: {
         family: 'Roboto',
-        size: '18px',
-        height: '20px',
+        size: '1.5vw',
+        height: '2vw',
       },
     },
   };
@@ -37,23 +37,19 @@ const theme = {
                >
                 <Box  
                    full direction='row'
-                   align='start'
+                   align='end'
                    justify='between'
                    background='brand'
                    pad={{ left: 'medium', right: 'small', vertical: 'small' }}
                    margin={{ top: 'none' }}
                    elevation='medium'
-                   style={{ zIndex: '1', position: 'fixed', width:'100%', top: '0px', left: '0px'}}
+                   style={{ zIndex: '1', position: 'fixed', width:'100%', top: '0px', left: '0px', lineHeight: '20px'}}
                    gridArea='header'
                 >
-                   Bogdan Samoletskyi resume 
+                   <Box flex  width='small' style={{lineHeight: '25px'}}><span class='headertext'>Bogdan Samoletskyi resume </span> </Box>{size=== 'small' && ( <MinMenu /> )} 
                 </Box>  
 
-                {(size === 'medium' || size === 'small') ? (
-
-                  <MinMenu />
-                   
-                ) : (          
+                {size !== 'small' &&  (          
                 
                   <MainMenu />
 
@@ -64,7 +60,6 @@ const theme = {
                    pad={{ left: 'small', right: 'small', vertical: 'large' }} 
                    align = 'end' 
                    gridArea='main' 
-                   background='light-1' 
                 >
                 <div>
                   

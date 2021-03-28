@@ -5,7 +5,7 @@ import photo from './resume_photo.jpg';
 
 const About = () => {    
     return (
-      <div id='about' style={{paddingTop:'50px'}}><big>Full stack developer aspired in Data Science</big>
+      <div id='about' style={{paddingTop:'65px'}}><big>Full stack developer aspired in Data Science</big>
         <Box
             margin={{ left: 'none', right: 'none', vertical: 'large' }}>
               <Box

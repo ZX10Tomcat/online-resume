@@ -4,7 +4,7 @@ import { Grow, Sort, Robot, Clone } from 'grommet-icons';
 
 const Projects = () => {    
     return (  
-      <div id='projects' style={{paddingTop:'20px'}}> 
+      <div id='projects' style={{paddingTop:'30px'}}> 
         <Box
            margin={{ left: 'none', right: 'none', vertical: 'large' }}>
            <Box

@@ -4,7 +4,7 @@ import {  MailOption,  Linkedin, Github } from 'grommet-icons';
 
 const Contacts = () => {    
     return ( 
-      <div id='contacts' style={{paddingTop:'20px'}}> 
+      <div id='contacts' style={{paddingTop:'30px'}}> 
         <Box
            margin={{ left: 'none', right: 'none', vertical: 'large' }}>
            <Box
