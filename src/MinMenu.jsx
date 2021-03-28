@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Menu } from 'grommet';
-import { CaretNext  } from 'grommet-icons';
 
 const MinMenu = () => {    
     return (
