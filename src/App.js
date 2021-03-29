@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import { Box, Grid, Grommet, ResponsiveContext } from 'grommet';
 import MinMenu from './MinMenu';
 import MainMenu from './MainMenu';
@@ -10,31 +10,22 @@ import Projects from './Projects';
 import Contacts from './Contacts';
 import Blog from './Blog';
 
-const theme = {
-    global: {
-      font: {
-        family: 'Roboto',
-        size: '1.5vw',
-        height: '2vw',
-      },
-    },
-  };
-
-  const App = () => {        
-        return (
-         <Grommet theme={theme}>  
+  const App = () => {  
+      return (
+         <Grommet> 
          <ResponsiveContext.Consumer>
          {size => (
+           
                <Grid 
                   rows={['xxsmall', 'fill']}
-                  columns={['small', 'auto']}
+                  columns={[size !== 'small' ? 'small' : 'none'  , 'auto']}
                   gap='small'
                   areas={[
                      { name: 'header', start: [0, 0], end: [1, 0], fill: true },
                      { name: 'nav', start: [0, 1], end: [0, 1],  fill: true } ,
                      { name: 'main', start: [1, 1], end: [1, 1], fill: true },
                   ]}
-               >
+               >                                       
                 <Box  
                    full direction='row'
                    align='end'
@@ -46,7 +37,7 @@ const theme = {
                    style={{ zIndex: '1', position: 'fixed', width:'100%', top: '0px', left: '0px', lineHeight: '20px'}}
                    gridArea='header'
                 >
-                   <Box flex  width='small' style={{lineHeight: '25px'}}><span class='headertext'>Bogdan Samoletskyi resume </span> </Box>{size=== 'small' && ( <MinMenu /> )} 
+                   <Box flex  width='small' style={{lineHeight: '25px'}}><span className='headertext'>Bogdan Samoletskyi resume </span> </Box>{size=== 'small' && ( <MinMenu /> )} 
                 </Box>  
 
                 {size !== 'small' &&  (          
@@ -64,34 +55,34 @@ const theme = {
                 <div>
                   
                    {/* --- About Section --- */}
-                  <About />
-
+                   <About />  
                   {/* --- Experience Section --- */}  
                   <Experience />
 
                   {/* --- Qualifications Section --- */}  
-                  <Qualifications /> 
+                  {/*<Qualifications /> 
 
                   {/* --- Certificates Section --- */}          
-                  <Certificates />
+                  {/*<Certificates />
 
                   {/* --- Projects Section --- */}   
-                  <Projects />
+                  {/*<Projects />
 
                   {/* --- Contacts Section --- */}
-                  <Contacts />
+                  {/*<Contacts />
                   
                   {/* --- Blog Section --- */}
-                  <Blog />
-
+                  {/*<Blog />*/}
                 </div>
                 </Box>
                 
                 
                 </Grid>
+                
                 )}
                </ResponsiveContext.Consumer>
-                </Grommet>
+               </Grommet>
+               
     
         )}
 

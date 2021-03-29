@@ -38,13 +38,14 @@ const Experience = () => {
          >  
            <Box 
               pad='medium' 
+              fill='horizontal'
               align='center' 
               width='medium' 
               justify='start'   
               background='light-4' 
            >
                <strong>11/2018 – Till now</strong>
-            </Box>
+           </Box> 
             <Box 
                pad='medium' 
                fill='horizontal'
@@ -59,9 +60,8 @@ const Experience = () => {
                   Succesfully done software migration to the new OS. Using SCRUM in development process. <br />
                   Writing documentation using Confluence. Organizing technical presentation about latest technologies.
                </p>
-            </Box>  
+            </Box> 
          </Box>    
-
          <Box 
             margin={{ left: 'none', right: 'none', vertical: 'small' }}
             direction='row-responsive'
@@ -71,6 +71,7 @@ const Experience = () => {
          >  
             <Box 
                pad='medium' 
+               fill='horizontal'
                align='center' 
                width='medium' 
                justify='start' 
@@ -103,6 +104,7 @@ const Experience = () => {
          >  
             <Box 
                pad='medium' 
+               fill='horizontal'
                align='center' 
                width='medium' 
                justify='start' 
@@ -135,6 +137,7 @@ const Experience = () => {
          >  
             <Box 
                pad='medium' 
+               fill='horizontal'
                align='center' 
                width='medium' 
                justify='start' 
@@ -166,6 +169,7 @@ const Experience = () => {
          >  
             <Box 
                pad='medium' 
+               fill='horizontal'
                align='center' 
                width='medium' 
                justify='start'
@@ -198,6 +202,7 @@ const Experience = () => {
          >  
             <Box 
                pad='medium' 
+               fill='horizontal'
                align='center' 
                width='medium' 
                justify='start'  
@@ -219,8 +224,7 @@ const Experience = () => {
                   Administrating Apache web-server based on FreeBSD.
                </p>
             </Box>  
-         </Box>     
-
+         </Box> 
          </Box>            
       </Box>
       </div>

@@ -49,7 +49,7 @@ const MainMenu = () => {
                     justify='start'  
                     background='light-1'   
                   >        
-                     <a href='#about'><span class='menuitem'>About</span></a>
+                     <a href='#about'><span className='menuitem'>About</span></a>
                   </Box>
                 </Box>
 
@@ -76,7 +76,7 @@ const MainMenu = () => {
                     justify='start'  
                     background='light-1'   
                   >        
-                     <a href='#experience'><span class='menuitem'>Experience </span></a>
+                     <a href='#experience'><span className='menuitem'>Experience </span></a>
                   </Box>
                 </Box>
 
@@ -103,7 +103,7 @@ const MainMenu = () => {
                      justify='start'  
                      background='light-1'   
                   >        
-                     <a href='#qualifications'> <span class='menuitem'>Qualifications</span></a>
+                     <a href='#qualifications'> <span className='menuitem'>Qualifications</span></a>
                   </Box>
                </Box>
 
@@ -131,7 +131,7 @@ const MainMenu = () => {
                      justify='start'  
                      background='light-1'   
                   >        
-                     <a href='#certificates'><span class='menuitem'>Education & Certificates </span></a>
+                     <a href='#certificates'><span className='menuitem'>Education & Certificates </span></a>
                   </Box>
                </Box>
 
@@ -159,7 +159,7 @@ const MainMenu = () => {
                      justify='start'  
                      background='light-1'   
                   >        
-                     <a href='#projects'><span class='menuitem'>Personal projects </span></a>
+                     <a href='#projects'><span className='menuitem'>Personal projects </span></a>
                   </Box>
                </Box>
 
@@ -187,7 +187,7 @@ const MainMenu = () => {
                      justify='start'  
                      background='light-1'   
                   >        
-                     <a href='#contacts'><span class='menuitem'>Contacts </span></a>
+                     <a href='#contacts'><span className='menuitem'>Contacts </span></a>
                   </Box>
                </Box>
 
@@ -215,7 +215,7 @@ const MainMenu = () => {
                      justify='start'  
                      background='light-1'   
                   >        
-                     <a href='#blog'><span class='menuitem'>Blog </span></a>
+                     <a href='#blog'><span className='menuitem'>Blog </span></a>
                   </Box>
                </Box>
                            
