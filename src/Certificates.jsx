@@ -85,7 +85,7 @@ const Certificates = () => {
            >                                                
               <p>
                  “AWS Certified DeveloperAssociate” 09/24/2020 <br />
-                 <a href='https://www.youracclaim.com/badges/f6ba871c-04a6-4a84-8094-7cab52ae776a' rel="noreferrer" target='_blank'>https://www.youracclaim.com/badges/f6ba871c-04a6-4a84-8094-7cab52ae776a </a>
+                 <a href='https://www.youracclaim.com/badges/f6ba871c-04a6-4a84-8094-7cab52ae776a' rel="noreferrer" target='_blank'>youracclaim.com badge</a>
              </p>
            </Box>  
         </Box> 
@@ -113,7 +113,7 @@ const Certificates = () => {
               justify='start'    
            >                                                
               <p>
-                 <a href='https://mcp.microsoft.com/Anonymous//Transcript/Validate' rel="noreferrer" target='_blank'>https://mcp.microsoft.com/Anonymous//Transcript/Validate</a>	(Transcript ID: 1154759, access code: testAccess1) <br />
+                 <a href='https://mcp.microsoft.com/Anonymous//Transcript/Validate' rel="noreferrer" target='_blank'>Validate</a><br /> (Transcript ID: 1154759, access code: testAccess1) <br />
                 Microsoft Certified Solutions Developer “Web Applications” 06/27/2014 <br/>
                 Microsoft certified professional “Windows Application development Certificates: with Microsoft .NET Framework 4”, 07/03/2012
              </p>

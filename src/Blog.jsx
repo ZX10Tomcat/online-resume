@@ -53,7 +53,7 @@ const Blog = () => {
              justify='start'    
           >                                                
               <p>
-                 <a href='https://bogdansamoletskyi.medium.com/' rel="noreferrer" target='_blank'>https://bogdansamoletskyi.medium.com/</a>
+                 <a href='https://bogdansamoletskyi.medium.com/' rel="noreferrer" target='_blank'>Medium blog</a>
              </p>
           </Box>  
         </Box> 
@@ -82,7 +82,7 @@ const Blog = () => {
             justify='start'    
            >                                                
               <p>
-              <a href='http://www.progsandbox.tech/' rel="noreferrer" target='_blank'>http://www.progsandbox.tech/</a>
+              <a href='http://www.progsandbox.tech/' rel="noreferrer" target='_blank'>Programmer's sandbox</a>
              </p>
            </Box>  
           </Box> 

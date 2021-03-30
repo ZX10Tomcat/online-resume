@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React from 'react';
 import { Box, Grid, Grommet, ResponsiveContext } from 'grommet';
 import MinMenu from './MinMenu';
 import MainMenu from './MainMenu';
@@ -49,30 +49,30 @@ import Blog from './Blog';
                 <Box 
                    flex 
                    pad={{ left: 'small', right: 'small', vertical: 'large' }} 
-                   align = 'end' 
+                   align = 'stretch' 
                    gridArea='main' 
                 >
                 <div>
                   
                    {/* --- About Section --- */}
-                   <About />  
+                   <About size={size}/>  
                   {/* --- Experience Section --- */}  
                   <Experience />
 
                   {/* --- Qualifications Section --- */}  
-                  {/*<Qualifications /> 
+                  <Qualifications /> 
 
                   {/* --- Certificates Section --- */}          
-                  {/*<Certificates />
+                  <Certificates />
 
                   {/* --- Projects Section --- */}   
-                  {/*<Projects />
+                  <Projects />
 
                   {/* --- Contacts Section --- */}
-                  {/*<Contacts />
+                  <Contacts />
                   
                   {/* --- Blog Section --- */}
-                  {/*<Blog />*/}
+                  <Blog />
                 </div>
                 </Box>
                 

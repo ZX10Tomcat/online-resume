@@ -38,14 +38,14 @@ const Experience = () => {
          >  
            <Box 
               pad='medium' 
-              fill='horizontal'
               align='center' 
               width='medium' 
               justify='start'   
               background='light-4' 
            >
                <strong>11/2018 – Till now</strong>
-           </Box> 
+           </Box>
+
             <Box 
                pad='medium' 
                fill='horizontal'

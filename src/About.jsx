@@ -3,9 +3,11 @@ import { Box, Heading, } from 'grommet';
 import { UserExpert } from 'grommet-icons';
 import photo from './resume_photo.jpg';
 
-const About = () => {    
-    return (
-      <div id='about' style={{paddingTop:'65px'}}><big>Full stack developer aspired in Data Science</big>
+const About = (props) => {    
+  
+    return (      
+      <div id='about' style={{paddingTop:'65px'}}><big><strong>Full stack developer aspired in Data Science</strong></big><br/>
+      {(props.size ==='small' || props.size ==='medium') && <div align='center'><img src={photo} alt = 'Bogdan Samoletskyi' width='159' height='207' /></div>}
         <Box
             margin={{ left: 'none', right: 'none', vertical: 'large' }}>
               <Box
@@ -32,13 +34,14 @@ const About = () => {
                  width='xlarge' 
                  justify='start'         
               >                 
-                 <big>Always open for new opportunities and challenges to make the world better.</big>
+                 <big><strong>Always open for new opportunities and challenges to make the world better.</strong></big>
+                 
                  <p>
                     During my career, I went a long way from a junior PHP developer to a senior full-stack developer in a big company. <br />
-                    Worked in various companies and with various technologies, primarily with .Net C# stack, ASP .Net and .Net Core.<br />
+                    Worked in various companies and with various technologies, primarily with .Net C# stack, ASP .Net and .Net Core.<br /><br />
                     I am always aspired to learn new technologies and tools, to make work for business better and faster.<br />
                     Willing know what is the best fit to the project needs and to have strong background knowledge.<br />
-                    Trying to do my best to use my knowledge in problem-solving tasks.<br/>
+                    Trying to do my best to use my knowledge in problem-solving tasks.<br/><br />
                     I have good spoken English and fluent Ukrainan and Russian.
                     <br /><br />
                     Interested in the Data science projects and in cloud technologies and have a blog on Medium, where I’m writing about Data science. <br />
@@ -46,11 +49,13 @@ const About = () => {
 
               </p>                    
               </Box>
+              {(props.size !=='small' && props.size !=='medium') && (
               <Box 
                 pad={{ left: 'medium', right: 'none', vertical: 'medium' }}
               >
-                   <img src={photo} alt = 'Bogdan Samoletskyi' wih='159' height='207'/>
+                   <img src={photo} alt = 'Bogdan Samoletskyi' width='159' height='207'/>
               </Box>
+               )}
               </Box>                   
               </Box>  
          </div>

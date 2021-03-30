@@ -1,13 +1,13 @@
 html, div {
   font-family: 'Roboto';
-  font-size: calc(0.65em + 0.4vw);
-  line-height: calc(0.8em + 0.5vw);
+  font-size: 18px;
+  line-height: 20px;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 45em) {
   html, div {
-    font-size: 0.9em;
-    line-height: 1.1em;
+    font-size: 1em;
+    line-height: 1.2em;
   }
 }
 
