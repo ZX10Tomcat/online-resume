@@ -81,7 +81,7 @@ const Contacts = () => {
               justify='start'    
            >                                                
               <p>
-                 <a href='https://www.linkedin.com/in/bogdan-samoletsky-590046103/' rel="noreferrer" target='_blank'>https://www.linkedin.com/in/bogdan-samoletsky-590046103/</a>
+                 <a href='https://www.linkedin.com/in/bogdan-samoletsky-590046103/' rel="noreferrer" target='_blank'>Linkedin</a>
              </p>
            </Box>  
         </Box>
@@ -109,7 +109,7 @@ const Contacts = () => {
               justify='start'    
            >                                                
               <p>
-                 <a href='https://github.com/ZX10Tomcat/' rel="noreferrer" target='_blank'>https://github.com/ZX10Tomcat/</a>
+                 <a href='https://github.com/ZX10Tomcat/' rel="noreferrer" target='_blank'>GitHub</a>
              </p>
            </Box>  
         </Box>  

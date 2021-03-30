@@ -53,7 +53,7 @@ const Projects = () => {
                 justify='start'    
              >                                                
              <p>
-                <a href='https://github.com/ZX10Tomcat/JupyterF1' rel="noreferrer" target='_blank'>https://github.com/ZX10Tomcat/JupyterF1</a><br />
+                <a href='https://github.com/ZX10Tomcat/JupyterF1' rel="noreferrer" target='_blank'>GitHub repo</a><br />
                  <br/>
                  Jupyter notebook with Formula 1 qualification statistics, data washing and visualization.
              </p>
@@ -83,7 +83,7 @@ const Projects = () => {
                  justify='start'    
               >                                                
                 <p>
-                  <a href='https://github.com/ZX10Tomcat/f1ChatBot' rel="noreferrer" target='_blank'>https://github.com/ZX10Tomcat/f1ChatBot</a><br />
+                  <a href='https://github.com/ZX10Tomcat/f1ChatBot' rel="noreferrer" target='_blank'>GitHub repo</a><br />
                   <br/>
                  (Currently in development) original code belongs to Asterious Stergios. <a href='https://www.f1-predictor.com/' rel="noreferrer" target='_blank'>f1- predictor</a><br />
                  Facebook chat bot for talking about racers, results, championships and more in Formula1. <br /> 
@@ -116,7 +116,7 @@ const Projects = () => {
               justify='start'    
            >                                                
               <p>
-                 <a href='https://github.com/ZX10Tomcat/web_scraper' rel="noreferrer" target='_blank'>https://github.com/ZX10Tomcat/web_scraper</a><br />
+                 <a href='https://github.com/ZX10Tomcat/web_scraper' rel="noreferrer" target='_blank'>GitHub repo</a><br />
                  <br/>
                  Dockerized node.js angular solution for scrape information from formula 1 site, show and store it. 
              </p>
