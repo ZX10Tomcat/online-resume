@@ -70,8 +70,7 @@ const Experience = () => {
             style={{width:'80%'}} 
          >  
             <Box 
-               pad='medium' 
-               fill='horizontal'
+               pad='medium'                
                align='center' 
                width='medium' 
                justify='start' 
@@ -103,8 +102,7 @@ const Experience = () => {
             style={{width:'80%'}} 
          >  
             <Box 
-               pad='medium' 
-               fill='horizontal'
+               pad='medium'                
                align='center' 
                width='medium' 
                justify='start' 
@@ -137,7 +135,6 @@ const Experience = () => {
          >  
             <Box 
                pad='medium' 
-               fill='horizontal'
                align='center' 
                width='medium' 
                justify='start' 
@@ -169,7 +166,6 @@ const Experience = () => {
          >  
             <Box 
                pad='medium' 
-               fill='horizontal'
                align='center' 
                width='medium' 
                justify='start'
@@ -202,7 +198,6 @@ const Experience = () => {
          >  
             <Box 
                pad='medium' 
-               fill='horizontal'
                align='center' 
                width='medium' 
                justify='start'  
