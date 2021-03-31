@@ -6,7 +6,7 @@ const MinMenu = () => {
 
         <Box 
            width='xxsmall'
-           background='brand'
+           background='#3f1052'
            align='end'  
            pad={{ left: 'large', right: 'small', vertical: 'none' }}                 
            gridArea='header' 
