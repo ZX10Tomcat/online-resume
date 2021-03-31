@@ -30,7 +30,7 @@ import Blog from './Blog';
                    full direction='row'
                    align='end'
                    justify='between'
-                   background='brand'
+                   background='#3f1052'
                    pad={{ left: 'medium', right: 'small', vertical: 'small' }}
                    margin={{ top: 'none' }}
                    elevation='medium'
