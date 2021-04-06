@@ -85,7 +85,7 @@ const Projects = () => {
                 <p>
                   <a href='https://github.com/ZX10Tomcat/f1ChatBot' rel="noreferrer" target='_blank'>GitHub repo</a><br />
                   <br/>
-                 (Currently in development) original code belongs to Asterious Stergios. <a href='https://www.f1-predictor.com/' rel="noreferrer" target='_blank'>f1- predictor</a><br />
+                 (Currently in development) original code belongs to Asterios Stergioudis. <a href='https://www.f1-predictor.com/' rel="noreferrer" target='_blank'>f1- predictor</a><br />
                  Facebook chat bot for talking about racers, results, championships and more in Formula1. <br /> 
                  Using Python as a programming language, wit.ai and ergast.com as external APIs. <br />
                  Currently working on migration it to the AWS Lambda.
