@@ -40,7 +40,7 @@ const About = (props) => {
                     During my career, I went a long way from a junior PHP developer to a senior full-stack developer in a big company. <br />
                     Worked in various companies and with various technologies, primarily with .Net C# stack, ASP .Net and .Net Core.<br /><br />
                     I am always aspired to learn new technologies and tools, to make work for business better and faster.<br />
-                    Willing know what is the best fit to the project needs and to have strong background knowledge.<br />
+                    Willing to know what is the best fit to the project needs. Want to have strong background knowledge.<br />
                     Trying to do my best to use my knowledge in problem-solving tasks.<br/><br />
                     I have good spoken English and fluent Ukrainan and Russian.
                     <br /><br />
