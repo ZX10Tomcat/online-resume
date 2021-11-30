@@ -29,6 +29,38 @@ const Experience = () => {
             width='xlarge' 
             justify='center'                    
          >
+            <Box                       
+            margin={{ left: 'none', right: 'none', vertical: 'small' }}
+            direction='row-responsive'
+            background='light-2' 
+            elevation='medium'
+            style={{width:'80%'}} 
+         >  
+           <Box 
+              pad='medium' 
+              align='center' 
+              width='medium' 
+              justify='start'   
+              background='light-4' 
+           >
+               <strong>09/2021 – Till now</strong>
+           </Box>
+
+            <Box 
+               pad='medium' 
+               fill='horizontal'
+               align='start'
+               width='xlarge' 
+               justify='start'    
+            >
+               <strong>“ABSA”, Prague, Czech Republic.</strong>                         
+               <p>
+                  Full stack .Net developer in a large group of programmers. <br />
+                  Developing cloud native project using AWS C# .NET Core and React. <br />
+                  Using various AWS services in the project.
+               </p>
+            </Box> 
+         </Box>    
          <Box                       
             margin={{ left: 'none', right: 'none', vertical: 'small' }}
             direction='row-responsive'
@@ -43,7 +75,7 @@ const Experience = () => {
               justify='start'   
               background='light-4' 
            >
-               <strong>11/2018 – Till now</strong>
+               <strong>11/2018 – 09/2021</strong>
            </Box>
 
             <Box 
